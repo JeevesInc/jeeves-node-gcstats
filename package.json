@@ -24,7 +24,7 @@
   "gypfile": true,
   "devDependencies": {
     "aws-sdk": "^2.449.0",
-    "mocha": "^6.2.3",
+    "mocha": "^10.2.0",
     "semver": "^5.7.0",
     "should": "^13.2.3"
   },
@@ -37,5 +37,8 @@
     "remote_path": "./{module_name}/v{version}/{configuration}/",
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
     "host": "https://node-binaries.s3.amazonaws.com"
-  }
+  },
+  "bundleDependencies": [
+    "node-pre-gyp"
+  ]
 }
